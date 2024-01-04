@@ -43,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
   },
   chainSelectContainer: {
     flexBasis: "100%",
+    background: "#293249",
+    border: "none",
+    borderRadius: "20px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
@@ -50,6 +53,12 @@ const useStyles = makeStyles((theme) => ({
   chainSelectArrow: {
     position: "relative",
     top: "12px",
+    display: "flex",
+    padding: "0 10px",
+    margin: "0 10px",
+    border: "2px solid #0D111C",
+    background: "#293249",
+    borderRadius: "10px",
     [theme.breakpoints.down("sm")]: { transform: "rotate(90deg)" },
   },
   transferField: {
@@ -121,7 +130,7 @@ function Source() {
     <>
       <StepDescription>
         <div style={{ display: "flex", alignItems: "center" }}>
-          Select tokens to send through the bridge.
+          <h3>Swap</h3>
           <div style={{ flexGrow: 1 }} />
           <div>
             <Button
@@ -141,7 +150,6 @@ function Source() {
         style={{ marginBottom: "25px" }}
       >
         <div className={classes.chainSelectContainer}>
-          <Typography variant="caption">Source</Typography>
           <ChainSelect
             select
             variant="outlined"
@@ -161,7 +169,6 @@ function Source() {
           />
         </div>
         <div className={classes.chainSelectContainer}>
-          <Typography variant="caption">Target</Typography>
           <ChainSelect
             variant="outlined"
             select

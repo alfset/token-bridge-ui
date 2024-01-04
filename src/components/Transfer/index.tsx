@@ -80,14 +80,14 @@ function Transfer() {
           expanded={activeStep >= 0}
           disabled={preventNavigation || isRedeemComplete}
         >
-          <StepButton onClick={() => dispatch(setStep(0))} icon={null}>
+          {/* <StepButton onClick={() => dispatch(setStep(0))} icon={null}>
             1. Source
-          </StepButton>
+          </StepButton> */}
           <StepContent>
             {activeStep === 0 ? <Source /> : <SourcePreview />}
           </StepContent>
         </Step>
-        <Step
+        {/* <Step
           expanded={activeStep >= 1}
           disabled={preventNavigation || isRedeemComplete}
         >
@@ -121,7 +121,7 @@ function Transfer() {
           <StepContent>
             {isRedeemComplete ? <RedeemPreview /> : <Redeem />}
           </StepContent>
-        </Step>
+        </Step> */}
       </Stepper>
     </Container>
   );
