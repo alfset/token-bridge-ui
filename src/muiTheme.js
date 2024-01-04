@@ -13,7 +13,7 @@ export const theme = responsiveFontSizes(
     },
 
     typography: {
-      fontFamily: "'Roboto', sans-serif",
+      fontFamily: "'Montserrat', sans-serif",
       fontSize: 13,
       h1: {
         lineHeight: 0.9,
@@ -22,7 +22,7 @@ export const theme = responsiveFontSizes(
         fontWeight: "bold",
       },
       h2: {
-        fontWeight: "200",
+        fontWeight: "bold",
       },
       h4: {
         fontWeight: "600",
@@ -89,18 +89,18 @@ export const theme = responsiveFontSizes(
       MuiButton: {
         root: {},
         containedSizeSmall: {
-          background: 'rgba(7, 174, 180, .3)',
+          background: 'linear-gradient(180deg, #48367E 0%, #786CE7 100%)',
           border: 0,
-          borderRadius: 3,
+          borderRadius: 10,
           boxShadow: '0 3px 5px 2px rgba(7, 174, 180, .2)',
           color: 'white',
           height: 48,
           padding: '0 30px',
         },
         outlinedSizeSmall: {
-          background: 'rgba(7, 174, 180, .3)',
+          background: 'linear-gradient(180deg, #48367E 0%, #786CE7 100%)',
           border: 0,
-          borderRadius: 3,
+          borderRadius: 10,
           boxShadow: '0 3px 5px 2px rgba(7, 174, 180, .2)',
           color: 'white',
           height: 48,
@@ -141,10 +141,10 @@ export const theme = responsiveFontSizes(
       },
       MuiStep: {
         root: {
-          borderRadius: "5px"
+          borderRadius: "15px"
         },
         vertical: {
-          backgroundColor: "rgba(255,255,255,.07)",
+          backgroundColor: "#0D111C",
           backdropFilter: "blur(4px)",
           padding: "32px 32px 16px",
         },
